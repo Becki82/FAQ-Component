@@ -7,8 +7,9 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.4;
-  background: #fff;
-  color: #444;
+  background: #0f001a;
+  color: #f4e6ff;
+  /*background: radial-gradient(circle, #7400cc 0%, #0f001a 100%); - undecided if i like it atm */
 }
 
 .container {
@@ -27,24 +28,21 @@ body {
   list-style: none;
 }
 
-.accordion_item {
-  border-top: 1px solid #9f9f9f;
-}
-
 .button {
   font-size: 16px;
-  background-color: #008593;
-  color: #fff;
+  background-color: #8200e6;
+  color: #f4e6ff;
   text-align: left;
   font-weight: 700;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  border-radius: 15px;
   justify-content: space-between;
   align-items: center;
   padding: 18px 8px;
   cursor: pointer;
-  border: none;
+  box-shadow: 0 2px 4px 0 rgba(167, 51, 255), 0 3px 10px 0 rgba(167, 51, 255);
 }
 
 .control {
@@ -52,12 +50,14 @@ body {
 }
 
 .answer {
-  background-color: #f7f7f7;
+  background-color: #deb3ff;
+  color: #0f001a;
   padding: 20px;
+  border-radius: 15px;
 }
 /* activate toggle */
 .accordion_item.active .button {
-  background-color: #105057;
+  background-color: #3a0066;
 }
 .answer_wrapper {
   height: 0;
